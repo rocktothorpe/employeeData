@@ -257,8 +257,7 @@ var myList = {"employee":
     }
   ]
 }
-
-
+//comment
 
 
 
@@ -271,7 +270,7 @@ function preload(){
 
 
 
-
+//all of the below is a working table for the json data above
 
 // Builds the HTML Table out of myList.
 function buildHtmlTable(selector) {
