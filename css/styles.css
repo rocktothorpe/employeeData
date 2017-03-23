@@ -11,6 +11,15 @@
 .logo-text{
 	color: rgb(0,0,0);
 }
+
+
 .table-hover tbody tr:hover td, .table-hover tbody tr:hover th {
   background-color: rgb(110,241,210);
+}
+
+.table {
+    border-radius: 5px;
+    width: 80%;
+    margin: 0px auto;
+    float: none;
 }
