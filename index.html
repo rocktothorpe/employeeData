@@ -1,36 +1,55 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 
 <head>
 
-    <meta charset="utf-8">
-    <meta name = "viewport" content = "width=device-width, initial-scale=1"> <!-- ideal viewport for device--> 
-    <title>employee data</title>
-
-    <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
-       
-	
-</head>
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-
-<body onLoad="buildTable('#empDataTable')"> 
+    <head>
+       <meta charset="UTF-8">
+<meta http-equiv="X-UA Compatible" content = "IE=edge">
+<meta name = "viewport" content = "width=device-width, initial-scale=1">
+<!--link to the cdn-->
+<link rel = "stylesheet" href = "css/bootstrap.min.css">
 
 
-	<h1>Lawfirm Employee Data</h1>
-  <table id="empDataTable" border="2">
-  </table>
+<link rel="stylesheet" href="css/styles.css">
+        
 
-  <script src="scripts/main.js" charset="utf-8"></script>
+        <title>employee data</title>
+    </head>
 
-</body>
+    <body onLoad="buildTable('#empDataTable')">
+
+        <header class="bgimage">
+            <div class="container">
+
+                <h1 class = "logo-text"><br></br>Law Firm Employee Data</h1>
+            </div>
+        </header>
+        <p>
+            <br></br>
+            <br></br>
+        </p>
+
+
+        
+         <div class="container">
+
+        
+        
+        <table class="table table-bordered" id="empDataTable">
+        </table>
+
+                </div>
+        
+        
+
+
+        <script src="js/jquery-3.2.0.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <!-- not sure about this-->
+        <script src="js/script.js"></script>
+        
+
+    </body>
 
 </html>
-
-
-
-
-
-
-
-

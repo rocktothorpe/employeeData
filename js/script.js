@@ -1,35 +1,35 @@
 
 
-var myList;
+var empData;
 
-$.getJSON('data.json', function(empData){
-       myList = empData;
-       //alert(myList.property);
+$.getJSON('data.json', function(Data){
+       empData = Data;
+       //alert(empData.property);
  });
 
 
 /*
 function preload(){
-  myList = loadJSON("data.json");
+  empData = loadJSON("data.json");
 }
 */
 
 
 
 
-// Builds the HTML Table out of myList.
-function buildTable(selector) {
-  var columns = addAllColumnHeaders(myList.employee, selector);
+// Builds the HTML Table out of empData.
+function buildTable(selector) { //the selector is empDataTable
+  var columns = addAllColumnHeaders(empData.employee, selector);
 
-  for (var i = 0; i < myList.employee.length; i++) {
+  for (var i = 0; i < empData.employee.length; i++) {
     var row = $('<tr/>');
     for (var j = 0; j < 4; j++) {
-      var cellValue = myList.employee[i][columns[j]];
-      //if (cellValue == null) cellValue = "";
+      var cellValue = empData.employee[i][columns[j]];
       row.append($('<td/>').html(cellValue));
     }
     $(selector).append(row);
   }
+   
 }
 
 // Adds a header row to the table and returns the set of columns.
@@ -37,19 +37,19 @@ function buildTable(selector) {
 // all records.
 
 
-function addAllColumnHeaders(myList, selector) {
+function addAllColumnHeaders(empData, selector) {
   var columnSet = [];
   var headerTr$ = $('<tr/>');
   var count = 0;
+  var colNum = 4;
 
-  for (var i = 0; i < myList.length && (count != 4) ; i++) {
-    var rowHash = myList[i];
+  for (var i = 0; i < colNum ; i++) {
+    var rowHash = empData[i];
     for (var key in rowHash) {
       if ($.inArray(key, columnSet) == -1) {
         columnSet.push(key);
         headerTr$.append($('<th/>').html(key));
         count++;
-        
       }
       if (count == 4)
         break;
@@ -60,5 +60,6 @@ function addAllColumnHeaders(myList, selector) {
 
   return columnSet;
 }
+
 
 

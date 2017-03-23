@@ -1,0 +1,16 @@
+/* style.css */
+
+.bgimage {
+	background-image: url('../images/lawyer-scale.jpg');
+	background-position: center center;
+	background-size: cover;
+	height:
+	200px;
+}
+
+.logo-text{
+	color: rgb(0,0,0);
+}
+.table-hover tbody tr:hover td, .table-hover tbody tr:hover th {
+  background-color: rgb(110,241,210);
+}
