@@ -13,19 +13,21 @@
 	text-align: right;
 	margin-top: 80px;
 	margin-right: 70px;
+	
 
 
 
 }
+
 
 
 .table-hover tbody tr:hover td, .table-hover tbody tr:hover th {
-  background-color: rgb(110,241,210);
+  background-color: rgb(255, 238, 204);
 }
 
-.table {
-    border-radius: 5px;
-    width: 80%;
-    margin: 4px auto;
-    float: none;
+.details{
+
+	text-align: center;
+	outline: 1px solid black;
+	padding: 5px;
 }

@@ -1,6 +1,7 @@
 
 
 var empData;
+var ESC_KEY = 27;
 
 //stores json data into empData
 $.getJSON('data.json', function(Data){
@@ -19,7 +20,7 @@ function buildTable(selector) { //the selector is empDataTable
   
   for (var i = 0; i < empData.employee.length; i++) {
     //var row = $('<tr class = "row' + i + '">');//gives each row a unique class name
-    var row = $('<tr id= "' + i + '"  data-target="#popUpData" data-toggle="collapse" onclick="content(this)" >');
+    var row = $('<tr id= "' + i + '"  data-target="#popUpData"  onclick="content(this)" >');//data-toggle="collapse"
 
     tableBody.append(row);
     //tableBody.append(row);
@@ -70,41 +71,18 @@ function addAllColumnHeaders(empData, selector) {
 }
 
 
-/*
-$(document).ready(function() {
-    $('#empDataTable').DataTable( {
-        data: empData.employee,
-        columns: [
-            { title: "First Name" },
-            { title: "Last Name" },
-            { title: "Position" },
-            { title: "Salary" }
-        ]
-    } );
-} );
-*/
 
-/*
 
-        <div id="popUpData" class="collapse in">
-        <p id = "name">Name: <br></br></p>
-        <p id = "pos">Postiion: <br></br></p>
-<p id = "phone">Phone: <br></br></p>
-<p id = "email">Email: <br></br></p>
-<p id = "office">Office: <br></br></p>
-*/
+
 
 function content(elem) 
 {
+    showDetails();
     var destination = document.getElementById("popUpData"); //where the data should go
     var id = elem.id; 
     var idNum = Number(id);//changes id from string to number for array access
     var name = empData.employee[idNum]["First Name"] + " " + empData.employee[idNum]["Last Name"];
-    //alert(name);
-    //var pos = empData.employee[idNum].Postion;
-    //var phone = empData.employee[idNum].Phone;
-    //var email = empData.employee[idNum].Email;
-    //var office = empData.employee[idNum].Office;
+   
     var p1 = document.getElementById("name");
     p1.innerHTML = 'Name: ' + empData.employee[idNum]["First Name"] + " " + empData.employee[idNum]["Last Name"];
     var p2 = document.getElementById("pos");
@@ -115,12 +93,31 @@ function content(elem)
     p4.innerHTML = 'Email: ' + empData.employee[idNum].Email;
     var p5 = document.getElementById("office");
     p5.innerHTML = 'Office: ' + empData.employee[idNum].Office;
-    
-    //destination.append(list).html(name);
+    addEscape(); //pressing the escape key hides the data
+      
 }
 
+function showDetails(){
+  $("#dataContainer").removeClass('hidden');//shows the data
+$("#space").removeClass('hidden');
+}
+function hideDetails() {
+  $("#dataContainer").addClass('hidden');
+  $("#space").addClass('hidden');
+}
 
+function addEscape() 
+{
+  'use strict';
+  document.body,addEventListener('keyup', function (event) 
+  {
+  event.preventDefault();
+  //console.log(event.KeyCode);
+  if (event.keyCode === ESC_KEY) 
+    {
+      hideDetails();
 
-
-
+    }
+  }); 
+}
 
