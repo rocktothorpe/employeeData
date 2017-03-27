@@ -1,10 +1,11 @@
+
 {
 	"employee" : [
 		{
 			"First Name": "Stephen",
 			"Last Name": "Doyle",
 			"Position": "Partner",
-			"Salary": 205000,
+			"Salary": "$205,000",
 			"Email": "sdoyle@law.com",
 			"Phone": "310.332.4523",
 			"Office": "Los Angeles"
@@ -13,7 +14,7 @@
 			"First Name": "Stanley",
 			"Last Name": "Finlay",
 			"Position": "Lawyer",
-			"Salary": 160000,
+			"Salary": "$160,000",
 			"Email": "sfinlay@law.com",
 			"Phone": "312.299.8493",
 			"Office": "Chicago"
@@ -23,7 +24,7 @@
 			"First Name": "Lisa",
 			"Last Name": "Geist",
 			"Position": "Partner",
-			"Salary": 210000,
+			"Salary": "$210,000",
 			"Email": "lgeist@law.com",
 			"Phone": "203.439.2341",
 			"Office": "New York"
@@ -33,7 +34,7 @@
 			"First Name": "Jessica",
 			"Last Name": "Austin",
 			"Position": "Of Counsel",
-			"Salary": 250000,
+			"Salary": "$250,000",
 			"Email": "jaustin@law.com",
 			"Phone": "203.439.2392",
 			"Office": "New York"
@@ -44,7 +45,7 @@
 			"First Name": "Katherine",
 			"Last Name": "Ford",
 			"Position": "Lawyer",
-			"Salary": 180000,
+			"Salary": "$180,000",
 			"Email": "kford@law.com",
 			"Phone": "310.349.2392",
 			"Office": "Los Angeles"
@@ -55,7 +56,7 @@
 			"First Name": "Nataliya",
 			"Last Name": "Gonzales",
 			"Position": "Partner",
-			"Salary": 227000,
+			"Salary": "$227,000",
 			"Email": "ngonzales@law.com",
 			"Phone": "206.439.9489",
 			"Office": "Washington"
@@ -66,7 +67,7 @@
 			"First Name": "Richard",
 			"Last Name": "Mullen",
 			"Position": "Foreign Associate",
-			"Salary": 90000,
+			"Salary":"$90,000",
 			"Email": "rmullen@law.com",
 			"Phone": "+44.20.4820.3840",
 			"Office": "Miami"
@@ -77,7 +78,7 @@
 			"First Name": "James",
 			"Last Name": "Rhoades",
 			"Position": "Lawyer",
-			"Salary": 145000,
+			"Salary": "$145,000",
 			"Email": "jaustin@law.com",
 			"Phone": "203.439.2392",
 			"Office": "New York"
@@ -88,13 +89,11 @@
 			"First Name": "Steve",
 			"Last Name": "White",
 			"Position": "Associate",
-			"Salary": 55000,
+			"Salary": "$55,000",
 			"Email": "swhite@law.com",
 			"Phone": "813.184.5439",
 			"Office": "Tampa Bay"
 		}
 	]
 
-}	
-
-
+}

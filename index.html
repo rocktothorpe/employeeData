@@ -12,6 +12,9 @@
 
 
         <link rel="stylesheet" href="css/styles.css">
+        <link rel="icon" href="favicon-32x32.png" sizes="32x32">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/datatables/1.10.12/css/dataTables.bootstrap.min.css" rel="stylesheet" />
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
 
 
         <title>employee data</title>
@@ -19,35 +22,54 @@
 
     <body onLoad="buildTable('#empDataTable')">
 
-        <header class="bgimage">
-            <div class="container">
+        <body>
 
-                <h1 class="logo-text"><br></br>Law Firm Employee Data</h1>
+            <header class="bgimage">
+                <div class="container">
+
+                    <h1 class="logo-text"><br></br>Law Firm Employee Data</h1>
+                </div>
+            </header>
+
+
+            <p>
+                <br></br>
+                <br></br>
+            </p>
+
+            <div class="container" id="employeeTable">
+                <div class="row">
+
+                    <table class="table table-hover" data-link="row" id="empDataTable">
+
+
+
+                    </table>
+                </div>
             </div>
-        </header>
-        <p>
-            <br></br>
-            <br></br>
-        </p>
 
-        <div class="container-fluid">
-        <div class = "row">
-
-            <table class="table table-hover text-centered" data-link="row" id="empDataTable">
-            
-            </table>
-            </div>
+            <div id="popUpData" class="collapse">
+                <!-- POP UP CONTAINER DATA -->
+                <div id="popUpData" class="collapse in">
+        <p id = "name">Name: <br></br></p>
+        <p id = "pos">Postiion: <br></br></p>
+<p id = "phone">Phone: <br></br></p>
+<p id = "email">Email: <br></br></p>
+<p id = "office">Office: <br></br></p>
             </div>
 
-        
-        
-
-        <script src="js/jquery-3.2.0.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-        <!-- not sure about this-->
-        <script src="js/script.js"></script>
 
 
-    </body>
+
+            <script src="js/jquery-3.2.0.min.js"></script>
+            <script src="js/bootstrap.min.js"></script>
+            <!-- not sure about this-->
+            <script src="js/script.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/datatables/1.10.12/js/jquery.dataTables.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/datatables/1.10.12/js/dataTables.bootstrap.min.js"></script>
+
+
+        </body>
 
 </html>

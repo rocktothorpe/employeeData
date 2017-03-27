@@ -1,7 +1,7 @@
 /* style.css */
 
 .bgimage {
-	background-image: url('../images/lawyer-scale.jpg');
+	background-image: url('../images/law.jpg');
 	background-position: center center;
 	background-size: cover;
 	height:
@@ -10,6 +10,12 @@
 
 .logo-text{
 	color: rgb(0,0,0);
+	text-align: right;
+	margin-top: 80px;
+	margin-right: 70px;
+
+
+
 }
 
 
@@ -20,6 +26,6 @@
 .table {
     border-radius: 5px;
     width: 80%;
-    margin: 0px auto;
+    margin: 4px auto;
     float: none;
 }
