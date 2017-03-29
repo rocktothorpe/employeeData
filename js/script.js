@@ -20,7 +20,7 @@ function buildTable(selector) { //the selector is empDataTable
   
   for (var i = 0; i < empData.employee.length; i++) {
     //var row = $('<tr class = "row' + i + '">');//gives each row a unique class name
-    var row = $('<tr id= "' + i + '"  data-target="#popUpData"  onclick="content(this)" >');//data-toggle="collapse"
+    var row = $('<tr id= "' + i + '"  onclick="content(this)" >');//data-toggle="collapse"
 
     tableBody.append(row);
     //tableBody.append(row);
@@ -37,11 +37,6 @@ function buildTable(selector) { //the selector is empDataTable
 
 }
 
-
-
-// Adds a header row to the table and returns the set of columns.
-// Need to do union of keys from all records as some records may not contain
-// all records.
 
 
 
@@ -66,6 +61,7 @@ function addAllColumnHeaders(empData, selector) {
     header$.append(rowHead$)
   }
   $(selector).append(header$);
+ 
 
   return columnSet;
 }
@@ -97,22 +93,24 @@ function content(elem)
       
 }
 
+
+
 function showDetails(){
   $("#dataContainer").removeClass('hidden');//shows the data
 $("#space").removeClass('hidden');
 }
-function hideDetails() {
+function hideDetails() { //hides employee detail pop-up
   $("#dataContainer").addClass('hidden');
   $("#space").addClass('hidden');
 }
 
-function addEscape() 
+function addEscape() //use escape key to exit employee detail pop-up
 {
   'use strict';
   document.body,addEventListener('keyup', function (event) 
   {
   event.preventDefault();
-  //console.log(event.KeyCode);
+  
   if (event.keyCode === ESC_KEY) 
     {
       hideDetails();
@@ -120,4 +118,7 @@ function addEscape()
     }
   }); 
 }
+
+
+
 

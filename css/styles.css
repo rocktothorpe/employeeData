@@ -1,7 +1,12 @@
 /* style.css */
 
+
+body {
+	background: rgb(252, 255, 229);
+}
+
 .bgimage {
-	background-image: url('../images/law.jpg');
+	background-image: url('../images/law-pic.png');
 	background-position: center center;
 	background-size: cover;
 	height:
@@ -10,12 +15,11 @@
 
 .logo-text{
 	color: rgb(0,0,0);
+	font-size: 400%;
 	text-align: right;
-	margin-top: 80px;
-	margin-right: 70px;
 	
-
-
+	margin-right: 70px;
+	font-family: 'Tangerine', cursive;
 
 }
 
@@ -29,5 +33,6 @@
 
 	text-align: center;
 	outline: 1px solid black;
-	padding: 5px;
+	padding-top: 10px;
+	
 }
