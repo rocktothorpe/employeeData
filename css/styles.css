@@ -9,16 +9,16 @@ body {
 	background-image: url('../images/law-pic.png');
 	background-position: center center;
 	background-size: cover;
-	height:
-	200px;
+	
 }
 
 .logo-text{
 	color: rgb(0,0,0);
 	font-size: 400%;
 	text-align: right;
+	max-width: 500px;
 	
-	margin-right: 70px;
+	
 	font-family: 'Tangerine', cursive;
 
 }
@@ -35,4 +35,14 @@ body {
 	outline: 1px solid black;
 	padding-top: 10px;
 	
+}
+#searchBar {
+    background-image: url('../images/smag-glass.png'); /* Add a search icon to input */
+    background-position: 3px 4px;
+  background-repeat: no-repeat;
+  margin-top: 15px;
+
+  text-indent: 8px;
+
+   
 }
