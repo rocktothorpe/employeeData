@@ -7,18 +7,21 @@ body {
 
 .bgimage {
 	background-image: url('../images/law-pic.png');
-	background-position: center center;
+	background-position: bottom center;
 	background-size: cover;
+	background-repeat: no-repeat;
+	min-width: 750px;
+	max-height: 250px;
 	
 }
 
 .logo-text{
 	color: rgb(0,0,0);
-	font-size: 400%;
+	font-size: 350%;
 	text-align: right;
 	max-width: 500px;
-	
-	
+	margin-left: 350px;
+	margin-bottom: 15px;
 	font-family: 'Tangerine', cursive;
 
 }
@@ -34,15 +37,42 @@ body {
 	text-align: center;
 	outline: 1px solid black;
 	padding-top: 10px;
+	max-width: 350px;
+
+
 	
+}
+#filter{
+
+width: 150px;
+margin-top: 15px;
+padding: 3px;
+
+
+}
+li:hover {
+	background-color: rgb(222, 227, 234);
+}
+
+th { 
+	cursor: pointer; 
+}
+
+
+.btn {
+
+	background-color: rgb(255, 255, 255);
+	border: 1px;
+	border-style: solid;
+	color: gray;
 }
 #searchBar {
     background-image: url('../images/smag-glass.png'); /* Add a search icon to input */
     background-position: 3px 4px;
   background-repeat: no-repeat;
   margin-top: 15px;
-
   text-indent: 20px;
 
-   
 }
+
+
