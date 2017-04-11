@@ -5,6 +5,7 @@ body {
 	background: rgb(252, 255, 229);
 }
 
+/* image to be behind title*/
 .bgimage {
 	background-image: url('../images/law-pic.png');
 	background-position: left bottom;
@@ -14,7 +15,7 @@ body {
 	
 	
 }
-
+/*title text */
 .logo-text{
 	color: rgb(0,0,0);
 	font-size: 350%;
@@ -28,7 +29,7 @@ body {
 }
 
 
-
+/*highlights the row when mouse over the table*/
 .table-hover tbody tr:hover td, .table-hover tbody tr:hover th {
   background-color: rgb(255, 238, 204);
 }
