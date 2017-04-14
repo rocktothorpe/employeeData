@@ -7,10 +7,10 @@ body {
 
 .bgimage {
 	background-image: url('../images/law-pic.png');
-	background-position: bottom center;
+	background-position: bottom left;
 	background-size: cover;
 	background-repeat: no-repeat;
-	min-width: 750px;
+	/*min-width: 750px;*/
 	max-height: 250px;
 	
 }
@@ -19,8 +19,8 @@ body {
 	color: rgb(0,0,0);
 	font-size: 350%;
 	text-align: right;
-	max-width: 500px;
-	margin-left: 350px;
+	/*max-width: 500px;
+	margin-left: 350px;*/
 	margin-bottom: 15px;
 	font-family: 'Tangerine', cursive;
 
